@@ -35,5 +35,10 @@ namespace WpfLogin
         {
             EmployeeController emp = new EmployeeController(); 
         }
+
+        private void ChangePassword(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

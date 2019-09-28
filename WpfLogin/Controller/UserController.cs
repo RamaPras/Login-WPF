@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WpfLogin.Context;
+using WpfLogin.Models;
 
 namespace WpfLogin.Controller
 {
@@ -15,10 +16,9 @@ namespace WpfLogin.Controller
             {
                 var User = new User
                 {
-                    userName = "Joshua",
-                    Address = "Tanjung Duren"
+                  
                 };
-                ObjContext.Teachers.Add(Teacher);
+                ObjContext.Users.Add(User);
                 ObjContext.SaveChanges();
             }
         }

@@ -11,14 +11,14 @@
             <Image Source="F:\belajar C#\WpfLogin\WpfLogin\Assets\logo2.png " Width="96"  Height="96" />
             <StackPanel Margin="25">
                 <TextBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Username"/>
-                <PasswordBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Password"/>
+                <PasswordBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" materialDesign:HintAssist.Hint="Password"/>
                 <StackPanel>
                     <CheckBox Margin="15 10" Width="200" Content="Remember Me"/>
-                    <Button Click ="Button_Click" Margin="15 10" Width="200" Content="Login"/>
-                    <Button Click ="Button_Click_1" Margin="15 10" Width="200" Content="Change Password"/>
+                    <Button Click="Login" Margin="15 10" Width="200" Content="Login"/>
+                    <Button Click="ChangePassword" Margin="15 10" Width="200" Content="Change Password"/>
                 </StackPanel>
             </StackPanel>
-            <Button Margin="15 10" Width="200" Content="Register"/>
+            <Button  Click="Register"  Margin="15 10" Width="200" Content="Register"/>
         </StackPanel>
         
     </Grid>
